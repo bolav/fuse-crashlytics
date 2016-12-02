@@ -1,0 +1,19 @@
+<Extensions Backend="CPlusPlus" Condition="iOS">
+    <Require Xcode.Plist.Element><![CDATA[
+  <key>Fabric</key>
+  <dict>
+    <key>APIKey</key>
+    <string>@(Project.Crashlytics.APIKey)</string>
+    <key>Kits</key>
+    <array>
+      <dict>
+        <key>KitInfo</key>
+        <dict/>
+        <key>KitName</key>
+        <string>Crashlytics</string>
+      </dict>
+    </array>
+  </dict>
+]]></Require>
+<Require Xcode.ShellScript>\"${PODS_ROOT}/Fabric/run\" @(Project.Crashlytics.APIKey) @(Project.Crashlytics.ScriptKey)</Require>
+</Extensions>

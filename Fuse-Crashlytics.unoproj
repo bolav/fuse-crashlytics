@@ -1,0 +1,14 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+  	"Fuse",
+  	"FuseJS"
+  ],
+  "Crashlytics": {
+  	"APIKey": "API_KEY_first_from_script",
+    "ScriptKey": "script_key_second_key_from_script"
+  },
+  "Includes": [
+    "*"
+  ]
+}
