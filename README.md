@@ -28,6 +28,9 @@ Log in to [Crashlytics](https://fabric.io/kits/ios/crashlytics/install), and get
       "ScriptKey": "script_key_second_key_from_script"
     },
 
+The keys you get from this line:
+
+    "${PODS_ROOT}/Fabric/run" api_key script_key
 
 
 ### Run
