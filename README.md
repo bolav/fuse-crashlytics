@@ -1,10 +1,10 @@
 # Fuse-Crashlytics
-[![license](https://img.shields.io/github/license/bolav/fuse-crashlytics.svg?maxAge=2592000)](https://github.com/bolav/fuse-flurry/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/bolav/fuse-flurry.svg?branch=master)](https://travis-ci.org/bolav/fuse-flurry)
+[![license](https://img.shields.io/github/license/bolav/fuse-crashlytics.svg?maxAge=2592000)](https://github.com/bolav/fuse-crashlytics/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/bolav/fuse-crashlytics.svg?branch=master)](https://travis-ci.org/bolav/fuse-crashlytics)
 
 [Crashlytics](http://try.crashlytics.com/) API bindings for [Fusetools](http://www.fusetools.com).
 
-*NOTE THIS ONLY WORKS FOR iOS!*
+## *NOTE! THIS ONLY WORKS FOR iOS!*
 
 The reason for this is no NDK support for Crashlytics. Read this thread: https://twittercommunity.com/t/gradle-experiental-support/53441/16
 
@@ -16,8 +16,8 @@ This project requires `-DCOCOAPODS`.
 
 You can find the example in the `CrashlyticsExample` folder. It contains:
 
-CrashlyticsExample.unoproj - Our project file
-MainView.ux - The Super basic markup for our app (NO UI)
+- CrashlyticsExample.unoproj - Our project file
+- MainView.ux - The Super basic markup for our app (NO UI)
 
 ### Editing the Crashlytics parts
 
