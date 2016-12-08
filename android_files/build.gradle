@@ -1,0 +1,31 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+       jcenter()
+       mavenCentral()
+#if @(Project.Gradle.Repositories:IsSet)
+       @(Project.Gradle.Repositories:Join('\n'))
+#endif
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle-experimental:0.7.0-alpha1'
+        @(Gradle.Dependency.ClassPath:Join('\n', 'classpath \'', '\''))
+    }
+}
+
+allprojects {
+#if @(AltBuildPath:IsSet)
+    buildDir = "@(AltBuildPath)/${rootProject.name}/${project.name}"
+#endif
+    repositories {
+        jcenter()
+        mavenCentral()
+#if @(Project.Gradle.Repositories:IsSet)
+       @(Project.Gradle.Repositories:Join('\n'))
+#endif
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

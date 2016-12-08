@@ -4,8 +4,11 @@
   	"Fuse",
   	"FuseJS"
   ],
+  "Projects": [
+      "../src/Crashlytics/Crashlytics.unoproj"
+  ],
   "Crashlytics": {
-  	"APIKey": "API_KEY_first_from_script",
+    "APIKey": "api_key",
     "ScriptKey": "script_key_second_key_from_script"
   },
   "Includes": [

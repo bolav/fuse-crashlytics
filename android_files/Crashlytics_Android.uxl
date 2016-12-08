@@ -1,0 +1,19 @@
+<Extensions Backend="CPlusPlus" Condition="Android && GRADLE">
+  <!-- https://twittercommunity.com/t/gradle-experiental-support/53441/16 -->
+    <Declare Element="Gradle.Repositories" />
+    <ProcessFile Name="build.gradle" TargetName="@(Project.Name)/build.gradle" />
+    <Require Gradle.Dependency><![CDATA[
+  compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+    transitive = true;
+  }
+]]></Require>
+  <Require AndroidManifest.ApplicationElement><![CDATA[
+    <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value="@(Project.Crashlytics.APIKey)"
+    />
+]]></Require>
+  <Require Gradle.Repositories><![CDATA[
+    maven { url 'https://maven.fabric.io/public' }
+]]></Require>
+</Extensions>

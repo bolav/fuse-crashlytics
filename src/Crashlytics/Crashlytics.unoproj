@@ -1,0 +1,11 @@
+{
+  "Packages": [
+  	"Fuse"
+  ],
+  "Gradle": {
+    "Repositories": "maven { url 'https://maven.fabric.io/public' }"
+  },
+  "Includes": [
+    "*"
+  ]
+}

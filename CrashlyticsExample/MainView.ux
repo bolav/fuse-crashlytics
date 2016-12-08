@@ -1,0 +1,9 @@
+
+<App>
+	<ClientPanel>
+		<Crashlytics.Initialize />
+		<StackPanel>
+			<Text Value="Events should be logging now" TextWrapping="Wrap"/>
+		</StackPanel>
+	</ClientPanel>
+</App>
