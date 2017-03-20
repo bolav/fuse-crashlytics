@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+       maven { url 'https://maven.fabric.io/public' }
        jcenter()
        mavenCentral()
 #if @(Project.Gradle.Repositories:IsSet)
@@ -8,7 +9,7 @@ buildscript {
 #endif
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle-experimental:0.7.0-alpha1'
+        classpath 'com.android.tools.build:gradle:2.2.0'
         @(Gradle.Dependency.ClassPath:Join('\n', 'classpath \'', '\''))
     }
 }
@@ -20,9 +21,6 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
-#if @(Project.Gradle.Repositories:IsSet)
-       @(Project.Gradle.Repositories:Join('\n'))
-#endif
     }
 }
 

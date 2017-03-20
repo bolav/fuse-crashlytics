@@ -2,6 +2,7 @@
   <!-- https://twittercommunity.com/t/gradle-experiental-support/53441/16 -->
     <Declare Element="Gradle.Repositories" />
     <ProcessFile Name="build.gradle" TargetName="@(Project.Name)/build.gradle" />
+    <ProcessFile Name="app.gradle" TargetName="@(Project.Name)/app/build.gradle" />
     <Require Gradle.Dependency><![CDATA[
   compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
     transitive = true;

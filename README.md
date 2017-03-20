@@ -4,13 +4,11 @@
 
 [Crashlytics](http://try.crashlytics.com/) API bindings for [Fusetools](http://www.fusetools.com).
 
-## *NOTE! THIS ONLY WORKS FOR iOS!*
-
-The reason for this is no NDK support for Crashlytics. Read this thread: https://twittercommunity.com/t/gradle-experiental-support/53441/16
+This only works on Fuse 0.35 and higher.
 
 ## Compiling
 
-This project requires `-DCOCOAPODS`.
+This project requires `-DCOCOAPODS` for iOS or `-DGRADLE` for Android.
 
 ## Running the Example project
 
